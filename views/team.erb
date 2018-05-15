@@ -1,3 +1,12 @@
+<% 
+  team_name = params[:name]
+  coach = params[:coach]
+  pg = params[:pg]
+  sg = params[:sg]
+  sf = params[:sf]
+  pf = params[:pf]
+  c = params[:c]
+%>
 <!DOCTYPE html>
 <html>
  <head>
@@ -5,8 +14,13 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
+ <h1>Team Name: <%= team_name %></h1>
+  <h1>Coach: <%= coach %></h1>
+  <h1>Point Guard: <%= pg %></h1>
+  <h1>Shooting Guard: <%= sg %></h1>
+  <h1>Small Forward: <%= sf %></h1>
+  <h1>Power Forward: <%= pf %></h1>
+  <h1>Center: <%= c %></h1>
 
  </body>
 </html>
